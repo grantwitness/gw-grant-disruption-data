@@ -60,11 +60,6 @@
       "scheme": "url"
     },
     {
-      "identifier": "https://grantwitness.org/nih/updates/methodology",
-      "relation": "isDescribedBy",
-      "scheme": "url"
-    },
-    {
       "identifier": "https://archive.grantwitness.org/disruptions/",
       "relation": "isVariantFormOf",
       "scheme": "url"

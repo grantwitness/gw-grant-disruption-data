@@ -32,7 +32,7 @@ jobs:
           
       - name: Get current date
         id: date
-        run: echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+        run: echo "DATE=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
      
       # This might not be necessary—could try leaving publication_date blank to
       # see if Zenodo sets it to the upload date
