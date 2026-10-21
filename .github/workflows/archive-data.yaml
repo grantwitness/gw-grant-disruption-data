@@ -27,7 +27,7 @@ jobs:
       - name: Download CSVs
         run: |
           for agency in nih ahrq nsf cdc epa samhsa; do
-            wget -b -a wget-log -O data/$agency.csv https://data.grant-witness.us/$agency/dl-table.csv
+            wget -b -a wget-log -O data/"$agency"_disruptions.csv https://data.grant-witness.us/$agency/dl-table.csv
           done
           
       - name: Get current date
