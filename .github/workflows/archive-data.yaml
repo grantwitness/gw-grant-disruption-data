@@ -52,7 +52,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: Automated data update
-          file_pattern: 'data/*'
+          file_pattern: 'data/* .zenodo.json'
       - name: Create release
         if: ${{ (github.event_name=='workflow_dispatch' && github.event.inputs.make_release == 'true') || github.event_name=='schedule' }}
         uses: softprops/action-gh-release@v3
